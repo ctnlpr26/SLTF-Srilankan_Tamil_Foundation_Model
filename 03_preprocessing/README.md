@@ -1,7 +1,9 @@
-# Tamil OCR Text Cleaner
+# 03 · Tamil text normalization & preprocessing: Tamil OCR Text Cleaner
 
-Cleans raw OCR text from scanned Tamil books and articles so it can be used for
-knowledge-graph (KG) building: entity extraction, relation extraction and similar tasks.
+Cleans raw OCR text from scanned Tamil books and articles (noolaham.org). In SLTFM it is the
+step before [`02_corpus`](../02_corpus): its output files (`content_postprocessed.txt`, one per
+document) are what `build_sltfm_corpus.py` turns into the Hugging Face corpus. It was first built
+for knowledge-graph (KG) work, so it puts extra care into keeping named entities intact.
 
 It removes OCR noise (stray symbols, page numbers, English-only fragments), repairs
 broken Tamil words, joins lines that were split by the page layout, and writes clean
@@ -80,12 +82,11 @@ debris (`07.`, `Gmai`, `DSTUEGO GO`). Lines that mix Tamil with English glosses,
 
 ## Setup
 
-Requires Python 3.8+ (tested on 3.10) and [Git LFS](https://git-lfs.com/).
+Requires Python 3.8+ (tested on 3.10).
 
 ```bash
-git lfs install
-git clone <this-repo-url>
-cd tamil-text-cleaning
+git clone https://github.com/ctnlpr26/SLTF-Srilankan_Tamil_Foundation_Model.git
+cd SLTF-Srilankan_Tamil_Foundation_Model/03_preprocessing
 pip install -r requirements.txt
 git clone https://github.com/anoopkunchukuttan/indic_nlp_resources.git
 ```
@@ -97,8 +98,13 @@ export INDIC_RESOURCES_PATH=/path/to/indic_nlp_resources      # Linux/macOS
 $env:INDIC_RESOURCES_PATH = "C:\path\to\indic_nlp_resources"   # PowerShell
 ```
 
-`ta_master_dict.pkl` (about 2.1M Tamil words, 78 MB) is stored with Git LFS. If it is
+**Dictionary.** `ta_master_dict.pkl` (about 2.1M Tamil words, 78 MB) is **not stored in this
+repository** because of its size. Get a copy from the maintainer (it will move to a private
+Hugging Face Hub repo) and put it in this folder, or pass its path with `--dict`. If it is
 missing, the cleaner still runs but skips every dictionary-checked fix (19, 22 and 28).
+
+Note: the dictionary is a Python pickle. Only load a copy from a trusted source; loading a
+pickle can run code.
 
 ## Usage
 
@@ -193,19 +199,38 @@ The order of the steps is in `_clean_page()` in [tamil_ocr_cleaner.py](tamil_ocr
 
 ---
 
-## Project layout
+## Folder layout
 
 ```
 tamil_ocr_cleaner.py     the cleaner (CLI + library)
-ta_master_dict.pkl       Tamil word list for the dictionary-checked fixes (Git LFS)
 requirements.txt         Python dependencies
 examples/                small input and its expected output
-indic_nlp_resources/     IndicNLP resources (clone separately, not committed)
+ta_master_dict.pkl       Tamil word list for the dictionary-checked fixes (not committed; see Setup)
+indic_nlp_resources/     IndicNLP resources (clone separately; not committed)
 ```
 
 To check that the cleaner still works after a change:
 
 ```bash
 python tamil_ocr_cleaner.py examples/sample_input.txt out.txt
-diff out.txt examples/sample_output.txt   # no output means it matches
+diff out.txt examples/sample_output.txt        # Linux/macOS: no output means it matches
+fc.exe out.txt examples\sample_output.txt      # Windows PowerShell: "no differences encountered"
 ```
+
+---
+
+## Version history
+
+| Version | Change |
+|---|---|
+| v5j | First version (`clean_pipeline_v5j.py`) |
+| current | Renamed to `tamil_ocr_cleaner.py`; fixes to 22, 28 and 3 (see Recent changes) |
+
+## To do
+
+- Check Fix 29 on words that start with a suffix-like part (e.g. `திரு வள்ளுவர்`) so it does
+  not split names.
+- Make relative `--dict` paths resolve from the working directory, not the input file's folder.
+- Remove old wording ("v5j" in the banner and help text).
+- Add a switch to turn Fix 28 off on its own for modern-script books.
+- Move the dictionary to the Hugging Face Hub (or a plain-text word list) and add a download step.
