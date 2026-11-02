@@ -1,0 +1,1 @@
+indic-nlp-library>=0.92
