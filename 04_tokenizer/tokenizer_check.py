@@ -4,6 +4,8 @@ Usage:  python tokenizer_check.py > ../experiments/2026-10-tokenizer-efficiency/
 Needs HF_TOKEN in .env (Llama 3 is gated).
 """
 import os
+import sys
+sys.stdout.reconfigure(encoding="utf-8")
 
 from datasets import load_dataset
 from dotenv import load_dotenv
