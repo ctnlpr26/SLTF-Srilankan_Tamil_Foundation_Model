@@ -1,0 +1,91 @@
+SLTFM - Hugging Face revisions (recorded 2026-10-14)
+====================================================
+Short commit IDs as shown on the Hub "History" page. For the paper, replace each with the
+full 40-character hash (click the copy icon next to the commit ID on the Hub).
+
+----------------------------------------------------------------------
+DATASET: ctnlpr/sri-lankan-tamil-corpus
+----------------------------------------------------------------------
+Revision used for CPT and evaluation (latest):  0c28b57   "Upload README.md with huggingface_hub"
+
+Full history (newest first):
+  0c28b57  Upload README.md with huggingface_hub
+  efb70de  Upload README.md with huggingface_hub
+  105cddd  Upload dataset
+  c5b8730  Upload dataset
+  5f649d0  Upload README.md with huggingface_hub
+  3b1020b  Upload README.md with huggingface_hub
+  f88ae6a  Upload dataset
+  658ed94  Upload dataset
+  76643b9  initial commit
+(all committed ~2026-10-06)
+
+Note: the latest data upload is 105cddd; later commits only changed README.md
+(the dataset card / config block), so the data files are identical at 0c28b57.
+
+----------------------------------------------------------------------
+MODEL: ctnlpr/Llama-3-SLTFM-8B-CPT-LoRA
+----------------------------------------------------------------------
+Released model: checkpoint-1100 (epoch 1.990)
+  Repo revision to cite:          685cd27   "Create README.md"  (~2026-10-09)
+  Commit that added checkpoint:   59b9c7f   "checkpoint-1100 (epoch 1.990)"
+
+W&B run: mithushan-exentai/sltfm-cpt, run llama3-8b-sltfm-cpt-r64 (id 31d60bb69a)
+
+Session boundaries (resume points):
+  Session 1: fresh start  -> checkpoint-376 (epoch 0.681)   7eb5f7d
+  Session 2: resumed 376  -> checkpoint-758 (epoch 1.373)   1842b69
+  Session 3: resumed 758  -> checkpoint-1100 (epoch 1.990)  59b9c7f
+
+Checkpoint commits (newest first):
+  685cd27  Create README.md
+  59b9c7f  checkpoint-1100 (epoch 1.990)
+  25a16bc  checkpoint-1075 (epoch 1.945)
+  fffb31d  checkpoint-1050 (epoch 1.900)
+  686a717  checkpoint-1025 (epoch 1.854)
+  1dc8bc4  checkpoint-1000 (epoch 1.809)
+  0d502a6  checkpoint-975  (epoch 1.764)
+  3bc6dbc  checkpoint-950  (epoch 1.719)
+  4a5b3a8  checkpoint-925  (epoch 1.673)
+  63f889e  checkpoint-900  (epoch 1.628)
+  ef77c62  checkpoint-875  (epoch 1.583)
+  c38e4e0  checkpoint-850  (epoch 1.538)
+  bbf7d29  checkpoint-825  (epoch 1.492)
+  93c2366  checkpoint-800  (epoch 1.447)
+  37d9d0a  checkpoint-775  (epoch 1.402)
+  4a71018  Run config (session 3)
+  1842b69  checkpoint-758  (epoch 1.373)
+  be4ccbc  checkpoint-750  (epoch 1.358)
+  8406663  checkpoint-725  (epoch 1.313)
+  076fb0d  checkpoint-700  (epoch 1.268)
+  f1aac8f  checkpoint-675  (epoch 1.223)
+  019dd2f  checkpoint-650  (epoch 1.177)
+  32b0bc5  checkpoint-625  (epoch 1.132)
+  e08cdd9  checkpoint-600  (epoch 1.087)
+  39c58a9  checkpoint-575  (epoch 1.042)
+  5d0e89e  checkpoint-550  (epoch 0.996)
+  49f8f8b  checkpoint-525  (epoch 0.950)
+  ad9bb43  checkpoint-500  (epoch 0.905)
+  83524a4  checkpoint-475  (epoch 0.860)
+  67e791d  checkpoint-450  (epoch 0.815)
+  a01b92f  checkpoint-425  (epoch 0.769)
+  2847f66  checkpoint-400  (epoch 0.724)
+  3417bc8  Run config (session 2)
+  7eb5f7d  checkpoint-376  (epoch 0.681)
+  5868f47  checkpoint-375  (epoch 0.679)
+  0d52e94  checkpoint-350  (epoch 0.634)
+  8793508  checkpoint-325  (epoch 0.588)
+  a0321c0  checkpoint-300  (epoch 0.543)
+  76e24fb  checkpoint-275  (epoch 0.498)
+  aaf4c2a  checkpoint-250  (epoch 0.453)
+  d629726  checkpoint-225  (epoch 0.407)
+  dae22e7  checkpoint-200  (epoch 0.362)
+  3261ed7  checkpoint-175  (epoch 0.317)
+  a40c7f3  checkpoint-150  (epoch 0.272)
+  5b92bf6  checkpoint-125  (epoch 0.226)
+  45dc475  checkpoint-100  (epoch 0.181)
+  0058804  checkpoint-75   (epoch 0.136)
+  f732d6d  checkpoint-50   (epoch 0.091)
+  2c53249  checkpoint-25   (epoch 0.045)
+  6e47915  W&B run id
+  (earlier: initial commit + first Run config, not shown in the copied history)

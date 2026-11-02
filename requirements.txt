@@ -1,0 +1,11 @@
+# Laptop-side scripts (corpus, tokenizer, Q&A generation).
+# Training and evaluation run on Kaggle; the notebooks install their own packages.
+datasets
+huggingface_hub
+transformers
+tokenizers
+sentencepiece
+regex
+openai
+python-dotenv
+pyyaml
