@@ -1,0 +1,82 @@
+{
+ "source": "/kaggle/working/e2_full",
+ "n_chars": 1001456,
+ "n_segments": 507,
+ "models": [
+  {
+   "model": "llama3-8b",
+   "bpc": 1.5614174074379883,
+   "ci_low": 1.5305350125462922,
+   "ci_high": 1.592905849309546,
+   "chars_per_token": 0.740401527445595,
+   "peak_mem_gb": 7.407534122467041,
+   "chars_per_s": 243.67803547742932,
+   "quant": "4bit",
+   "loaded_with": "AutoModelForCausalLM"
+  },
+  {
+   "model": "llama3-8b-sltfm-cpt",
+   "bpc": 1.2436236527305031,
+   "ci_low": 1.2192801459102438,
+   "ci_high": 1.2683158999198285,
+   "chars_per_token": 0.740401527445595,
+   "peak_mem_gb": 8.033022403717041,
+   "chars_per_s": 206.61205790611805,
+   "quant": "4bit",
+   "loaded_with": "AutoModelForCausalLM + LoRA adapter",
+   "diff_vs_ref": -0.31779375470748517,
+   "diff_ci": [
+    -0.3276198260966378,
+    -0.3078661430855056
+   ]
+  },
+  {
+   "model": "qwen3.5-4b",
+   "bpc": 1.4176626629588633,
+   "ci_low": 1.3885614325521236,
+   "ci_high": 1.4473630092216867,
+   "chars_per_token": 2.0558796841832985,
+   "peak_mem_gb": 4.93051815032959,
+   "chars_per_s": 898.0625180450816,
+   "quant": "4bit",
+   "loaded_with": "AutoModelForCausalLM",
+   "diff_vs_ref": -0.14375474447912495,
+   "diff_ci": [
+    -0.15284315432139864,
+    -0.13476735091305675
+   ]
+  },
+  {
+   "model": "qwen3.5-9b",
+   "bpc": 1.3091586590473707,
+   "ci_low": 1.2804027457014069,
+   "ci_high": 1.338035074041005,
+   "chars_per_token": 2.0558796841832985,
+   "peak_mem_gb": 9.152273178100586,
+   "chars_per_s": 703.068318880804,
+   "quant": "4bit",
+   "loaded_with": "AutoModelForCausalLM",
+   "diff_vs_ref": -0.25225874839061757,
+   "diff_ci": [
+    -0.2611824852860891,
+    -0.24357024585570883
+   ]
+  },
+  {
+   "model": "agaram-2.5b",
+   "bpc": 1.0972132287635417,
+   "ci_low": 1.0754464780660098,
+   "ci_high": 1.1187236739172586,
+   "chars_per_token": 4.7876695956476425,
+   "peak_mem_gb": 2.4151387214660645,
+   "chars_per_s": 7053.143243787131,
+   "quant": "4bit",
+   "loaded_with": "AutoModelForCausalLM",
+   "diff_vs_ref": -0.46420417867444663,
+   "diff_ci": [
+    -0.4803644746404457,
+    -0.4494233463854689
+   ]
+  }
+ ]
+}
