@@ -1,0 +1,255 @@
+{
+ "step": 0,
+ "set": "control",
+ "loaded": "base (LlamaForCausalLM)",
+ "checkpoint": {
+  "global_step": 0,
+  "epoch": 0.0
+ },
+ "quant": "4bit",
+ "window": 2048,
+ "stride": 1024,
+ "n_chars": 263774,
+ "n_tokens": 55378,
+ "bpc": 0.67838501781329,
+ "score_s": 20.586117029190063,
+ "chars_per_s": 12813.198165106971,
+ "peak_mem_gb": 2.220188617706299,
+ "versions": {
+  "transformers": "5.23.0",
+  "torch": "2.11.0+cu130"
+ },
+ "rows": [
+  {
+   "doc_id": "wiki-3263",
+   "excerpt": 0,
+   "chars": 7991,
+   "tokens": 1531,
+   "bits": 4697.801755973899
+  },
+  {
+   "doc_id": "wiki-7296",
+   "excerpt": 0,
+   "chars": 7983,
+   "tokens": 1833,
+   "bits": 5237.161610033999
+  },
+  {
+   "doc_id": "wiki-2752",
+   "excerpt": 0,
+   "chars": 7997,
+   "tokens": 1690,
+   "bits": 6548.000097255863
+  },
+  {
+   "doc_id": "wiki-8515",
+   "excerpt": 0,
+   "chars": 7989,
+   "tokens": 1546,
+   "bits": 5408.863775952113
+  },
+  {
+   "doc_id": "wiki-5463",
+   "excerpt": 0,
+   "chars": 7991,
+   "tokens": 1578,
+   "bits": 5532.45773685249
+  },
+  {
+   "doc_id": "wiki-6517",
+   "excerpt": 0,
+   "chars": 7994,
+   "tokens": 1728,
+   "bits": 4811.273716680562
+  },
+  {
+   "doc_id": "wiki-9902",
+   "excerpt": 0,
+   "chars": 7998,
+   "tokens": 1512,
+   "bits": 5766.887869538898
+  },
+  {
+   "doc_id": "wiki-281261",
+   "excerpt": 0,
+   "chars": 7993,
+   "tokens": 2535,
+   "bits": 6111.282365364528
+  },
+  {
+   "doc_id": "wiki-7747",
+   "excerpt": 0,
+   "chars": 7993,
+   "tokens": 1588,
+   "bits": 6551.414175196711
+  },
+  {
+   "doc_id": "wiki-3794",
+   "excerpt": 0,
+   "chars": 7992,
+   "tokens": 1655,
+   "bits": 6774.747917726304
+  },
+  {
+   "doc_id": "wiki-9161",
+   "excerpt": 0,
+   "chars": 7999,
+   "tokens": 1662,
+   "bits": 4905.297400825221
+  },
+  {
+   "doc_id": "wiki-9055",
+   "excerpt": 0,
+   "chars": 7991,
+   "tokens": 1758,
+   "bits": 6063.460934950162
+  },
+  {
+   "doc_id": "wiki-4842",
+   "excerpt": 0,
+   "chars": 7999,
+   "tokens": 1534,
+   "bits": 4561.271943523257
+  },
+  {
+   "doc_id": "wiki-4905",
+   "excerpt": 0,
+   "chars": 7999,
+   "tokens": 1499,
+   "bits": 5096.447972003487
+  },
+  {
+   "doc_id": "wiki-5378",
+   "excerpt": 0,
+   "chars": 7976,
+   "tokens": 1493,
+   "bits": 4797.1355944330935
+  },
+  {
+   "doc_id": "wiki-281076",
+   "excerpt": 0,
+   "chars": 7997,
+   "tokens": 1650,
+   "bits": 6469.371629214983
+  },
+  {
+   "doc_id": "wiki-1599",
+   "excerpt": 0,
+   "chars": 7996,
+   "tokens": 1840,
+   "bits": 5290.912967572935
+  },
+  {
+   "doc_id": "wiki-1226",
+   "excerpt": 0,
+   "chars": 7997,
+   "tokens": 1672,
+   "bits": 4935.286983227241
+  },
+  {
+   "doc_id": "wiki-5056",
+   "excerpt": 0,
+   "chars": 7995,
+   "tokens": 1721,
+   "bits": 3453.695120652555
+  },
+  {
+   "doc_id": "wiki-6437",
+   "excerpt": 0,
+   "chars": 7993,
+   "tokens": 1694,
+   "bits": 6147.906098355465
+  },
+  {
+   "doc_id": "wiki-5503",
+   "excerpt": 0,
+   "chars": 7998,
+   "tokens": 1708,
+   "bits": 7975.538776893699
+  },
+  {
+   "doc_id": "wiki-6780",
+   "excerpt": 0,
+   "chars": 7997,
+   "tokens": 1570,
+   "bits": 1918.4472746739525
+  },
+  {
+   "doc_id": "wiki-4422",
+   "excerpt": 0,
+   "chars": 7986,
+   "tokens": 1464,
+   "bits": 5179.2663767397935
+  },
+  {
+   "doc_id": "wiki-6960",
+   "excerpt": 0,
+   "chars": 7989,
+   "tokens": 1571,
+   "bits": 7038.5159786052445
+  },
+  {
+   "doc_id": "wiki-2714",
+   "excerpt": 0,
+   "chars": 7995,
+   "tokens": 1588,
+   "bits": 3790.364012286833
+  },
+  {
+   "doc_id": "wiki-1714",
+   "excerpt": 0,
+   "chars": 7990,
+   "tokens": 1686,
+   "bits": 5779.19448338213
+  },
+  {
+   "doc_id": "wiki-5408",
+   "excerpt": 0,
+   "chars": 7997,
+   "tokens": 1698,
+   "bits": 6263.9167336784785
+  },
+  {
+   "doc_id": "wiki-1511",
+   "excerpt": 0,
+   "chars": 7985,
+   "tokens": 1502,
+   "bits": 4007.1436046527183
+  },
+  {
+   "doc_id": "wiki-7012",
+   "excerpt": 0,
+   "chars": 7999,
+   "tokens": 1737,
+   "bits": 5885.4298307495255
+  },
+  {
+   "doc_id": "wiki-8150",
+   "excerpt": 0,
+   "chars": 7996,
+   "tokens": 1679,
+   "bits": 6983.076291139486
+  },
+  {
+   "doc_id": "wiki-9804",
+   "excerpt": 0,
+   "chars": 7997,
+   "tokens": 1626,
+   "bits": 4510.4212112509485
+  },
+  {
+   "doc_id": "wiki-1318",
+   "excerpt": 0,
+   "chars": 7989,
+   "tokens": 1849,
+   "bits": 3809.5057311028554
+  },
+  {
+   "doc_id": "wiki-9369",
+   "excerpt": 0,
+   "chars": 7993,
+   "tokens": 1981,
+   "bits": 6638.831718193314
+  }
+ ]
+}

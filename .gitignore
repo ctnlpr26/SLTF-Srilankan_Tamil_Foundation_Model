@@ -28,3 +28,6 @@ venv/
 .idea/
 .DS_Store
 Thumbs.db
+
+# Experiment A excerpt sets contain corpus text
+sets.json
