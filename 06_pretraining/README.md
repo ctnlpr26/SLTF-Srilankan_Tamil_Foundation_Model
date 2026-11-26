@@ -14,3 +14,6 @@
 
 Result: [`ctnlpr/Llama-3-SLTFM-8B-CPT-LoRA`](https://huggingface.co/ctnlpr/Llama-3-SLTFM-8B-CPT-LoRA),
 `checkpoint-1100`. Run record: `experiments/2026-10-cpt-llama3-8b-r64/`.
+
+`sltfm_cpt_kaggle.ipynb` – CPT for any base model (`MODEL` = agaram-2.5b / qwen3.5-4b / qwen3.5-9b / llama3-8b),
+1 epoch, same text per step as the Llama 3 run. Modes: smoke → pilot → full. Run records in `experiments/2026-11-cpt-*`.
